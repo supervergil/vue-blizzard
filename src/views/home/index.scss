@@ -1,0 +1,172 @@
+.home {
+  & > .top {
+    margin-top: -60px;
+    padding-top: 60px;
+    height: 519px;
+    box-sizing: border-box;
+    & > .container {
+      position: relative;
+      margin: auto;
+      max-width: 1280px;
+      height: 100%;
+      white-space: nowrap;
+      & > .title {
+        position: relative;
+        padding-top: 30px;
+        height: 92px;
+        width: 402px;
+        margin-bottom: 10px;
+        & > a {
+          width: 402px;
+          height: 92px;
+          display: block;
+          border: none;
+          text-indent: -9999px;
+          background: url(../../assets//images/title.png) no-repeat;
+        }
+      }
+      & > .description {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 25px;
+        width: 670px;
+        font-size: 28px;
+        color: #62737e;
+        text-align: left;
+        white-space: normal;
+        & > a {
+          display: block;
+          width: 670px;
+          text-decoration: none;
+          color: #a2b9c2;
+          &:hover {
+            color: #fff;
+            & > span {
+              background: #3a4c53;
+              border-color: #3a4c53;
+              color: #93bdce;
+            }
+          }
+          & > span {
+            color: #566b73;
+            display: inline-block;
+            font-size: 14px;
+            border: 1px solid #3a4c53;
+            position: relative;
+            top: -5px;
+            padding: 2px 5px;
+            border-radius: 5px;
+          }
+        }
+      }
+      & > .register {
+        font-size: 12px;
+        margin-bottom: 5px;
+        margin-right: 10px;
+        display: inline-block;
+        color: #fff;
+        padding: 8px 15px;
+        border-radius: 3px;
+        box-shadow: 0 0 4px 2px #202325;
+        background: #0081b4;
+        text-decoration: none;
+        &:hover {
+          background: #008dc5;
+        }
+      }
+      & > .login {
+        font-size: 14px;
+        color: #00b6ff;
+        text-decoration: none;
+        &:hover {
+          color: white;
+        }
+      }
+      & > .download {
+        position: absolute;
+        right: 0;
+        top: 140px;
+        display: block;
+        width: 256px;
+        height: 176px;
+        background: url(../../assets/images/download.png) no-repeat 0 0;
+        text-decoration: none;
+        color: #00b6ff;
+        &:hover {
+          color: #fff;
+          background-position: -256px 0;
+        }
+        & > span {
+          width: 256px;
+          display: block;
+          text-align: center;
+          font-size: 14px;
+          margin-top: 160px;
+        }
+      }
+    }
+  }
+  & > .bottom {
+    height: 409px;
+    background: #d3d1ce;
+    border-bottom: 4px solid #777674;
+    & > .container {
+      position: relative;
+      margin: auto;
+      max-width: 1280px;
+      height: 100%;
+      text-align: center;
+      white-space: nowrap;
+      & > .item {
+        position: relative;
+        margin: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: inline-block;
+        border: 1px solid #3e414a;
+        top: -70px;
+        width: 162px;
+        height: 392px;
+        outline: none;
+        padding: 0;
+        font-size: 16px;
+        color: #b2bac7;
+        text-decoration: none;
+        &:hover {
+          color: white;
+          background-position: -248px 0;
+        }
+        & > .tip {
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+      & > .item-1 {
+        background: url(../../assets/images/fast-1.png) 0 0 no-repeat;
+      }
+      & > .item-2 {
+        background: url(../../assets/images/fast-2.png) 0 0 no-repeat;
+      }
+      & > .item-3 {
+        background: url(../../assets/images/fast-3.png) 0 0 no-repeat;
+      }
+      & > .item-4 {
+        background: url(../../assets/images/fast-4.jpg) 0 0 no-repeat;
+      }
+      & > .item-5 {
+        background: url(../../assets/images/fast-5.png) 0 0 no-repeat;
+      }
+      & > .item-6 {
+        background: url(../../assets/images/fast-6.png) 0 0 no-repeat;
+      }
+      & > .item-7 {
+        background: url(../../assets/images/fast-7.png) 0 0 no-repeat;
+      }
+    }
+  }
+}

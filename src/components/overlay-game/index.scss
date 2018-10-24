@@ -1,0 +1,151 @@
+.overlay-game {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 300px;
+  background-color: rgba(21, 26, 35, 0.95);
+  background: radial-gradient(
+    ellipse farthest-side at center top,
+    #283244 0%,
+    rgba(21, 26, 35, 0.95) 100%
+  );
+  border: solid 1px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+  border-left: 0;
+  border-right: 0;
+
+  & > .top {
+    position: relative;
+    height: 250px;
+    & > .container {
+      position: relative;
+      margin: auto;
+      max-width: 1520px;
+      height: 250px;
+      padding: 40px 0;
+      box-sizing: border-box;
+      text-align: center;
+      overflow: hidden;
+      & > .item {
+        position: relative;
+        display: inline-block;
+        margin: 0 20px 15px 0;
+        max-width: 172.5px;
+        width: 12%;
+        height: 180px;
+        overflow: hidden;
+        box-shadow: 0 8px 17px rgba(0, 0, 0, 0.1);
+        font-size: 0;
+        transition: border-color 200ms;
+        transform: translateZ(0);
+        box-sizing: border-box;
+        vertical-align: baseline;
+        &:hover {
+          box-shadow: 0 8px 17px rgba(0, 0, 0, 0.1);
+          &:after {
+            border: solid 1px rgba(255, 255, 255, 0.3);
+          }
+          & > img {
+            filter: brightness(115%) contrast(90%);
+          }
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          border: solid 1px rgba(255, 255, 255, 0.15);
+          pointer-events: none;
+        }
+        & > img {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 180px;
+          filter: brightness(100%) contrast(100%);
+          transition: filter 200ms;
+        }
+      }
+    }
+  }
+  & > .bottom {
+    position: relative;
+    height: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    & > .container {
+      position: relative;
+      margin: auto;
+      max-width: 1520px;
+      height: 50px;
+      text-align: center;
+      & > .item {
+        display: inline-block;
+        margin: 0 20px;
+        height: 50px;
+        line-height: 50px;
+        text-decoration: none;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.7);
+        transition: color 200ms, background-color 200ms;
+        &:hover {
+          color: white;
+          & > .icon {
+            color: #00c6ff;
+          }
+        }
+        & > .icon {
+          position: relative;
+          display: inline-block;
+          width: 1.5em;
+          height: 1.5em;
+          vertical-align: middle;
+          color: #00aeff;
+          transition: color 200ms, background-color 200ms;
+          & > svg {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            fill: currentColor;
+            pointer-events: none;
+          }
+        }
+        & > .text {
+          display: inline-block;
+          margin-left: 5px;
+          font-size: 15px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  & > .tri {
+    position: absolute;
+    top: 0;
+    left: 353.562px;
+    width: 10px;
+    height: 10px;
+    border-top: solid 1px rgba(255, 255, 255, 0.15);
+    border-right: solid 1px rgba(255, 255, 255, 0.15);
+    background-color: #283244;
+    opacity: 0.95;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    transform-origin: center;
+
+    & > .inner {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border: solid 1px transparent;
+      background-color: #151a23;
+      opacity: 0.616569;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.footer {
+  background-color: black;
+  padding-bottom: 20px;
+  & > .container {
+    position: relative;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    z-index: 0;
+    background-color: #000;
+    overflow: hidden;
+    & > .logo {
+      margin: 30px 0;
+      height: 66px;
+      & > a {
+        display: block;
+        position: relative;
+        width: 124px;
+        height: 66px;
+        margin: 0 auto;
+        font-size: 16px;
+        box-sizing: border-box;
+        &:hover {
+          & > svg {
+            color: #00c6ff;
+          }
+        }
+        & > svg {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          fill: currentColor;
+          pointer-events: none;
+          transition: color 200ms, background-color 200ms;
+          color: #00aeff;
+          font-size: 16px;
+          box-sizing: border-box;
+          &.bottomLogo {
+            color: #fff;
+          }
+        }
+      }
+    }
+    & > .bottomNav {
+      margin: 15px 0;
+      & > a {
+        margin-left: 20px;
+        margin-right: 20px;
+        color: rgba(255, 255, 255, 0.7);
+        background: transparent;
+        text-decoration: none;
+        font-size: 18px;
+        vertical-align: baseline;
+
+        &:hover {
+          color: white;
+        }
+      }
+      & > span {
+        color: rgba(255, 255, 255, 0.3);
+        vertical-align: baseline;
+      }
+    }
+    & > .copyright {
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 13px;
+    }
+  }
+}
