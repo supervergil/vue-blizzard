@@ -1,5 +1,7 @@
 # 基于parcel、vue 2.0和jsx搭建的仿战网系统
 
+使用parcel+jsx+vue2.0模仿了战网的页面，本人jsx和parcel练手项目，后续会不断完善页面，页面所有资源版权归暴雪所有。
+
 ## 使用方法
 
 npm run dev  // 开发
